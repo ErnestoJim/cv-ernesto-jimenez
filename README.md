@@ -1,17 +1,23 @@
 # CV - Ernesto Jimenez
 
-Sitio estático preparado para publicarse en GitHub Pages.
+Sitio estatico del CV, preparado para GitHub Pages.
+
+## Enlaces
+
+- Repositorio: `https://github.com/ErnestoJim/cv-ernesto-jimenez`
+- Sitio publicado: `https://ernestojim.github.io/cv-ernesto-jimenez/`
 
 ## Estructura
 
-- `index.html`: contenido del CV.
-- `styles.css`: estilo minimalista con estética terminal retro.
-- `script.js`: utilidades ligeras (año dinámico en footer).
-- `Ernesto Jimenez.docx`: fuente del contenido.
+- `index.html`: contenido principal del CV.
+- `styles.css`: estilos visuales (tema terminal retro).
+- `script.js`: script ligero para elementos dinamicos.
+- `assets/`: logos y recursos graficos.
+- `Ernesto Jimenez.docx`: documento fuente del contenido.
 
-## Verlo antes de publicar
+## Vista local
 
-1. Abre una terminal en esta carpeta (`c:\Code\CV`).
+1. Abre una terminal en la carpeta del proyecto.
 2. Ejecuta:
 
 ```powershell
@@ -24,11 +30,6 @@ python -m http.server 5500
 http://localhost:5500
 ```
 
-## Publicar en GitHub Pages
+## GitHub Pages
 
-1. Sube esta carpeta a un repositorio en GitHub.
-2. En el repo, entra a `Settings` -> `Pages`.
-3. En `Build and deployment`, elige:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main` (o la que uses) y `/root`
-4. Guarda y espera que GitHub Pages genere la URL pública.
+Configurado para desplegar desde la rama `main` en la raiz (`/`).
