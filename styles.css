@@ -1,0 +1,496 @@
+:root {
+  --bg: #060a07;
+  --panel: #0a120d;
+  --panel-2: #08100b;
+  --text: #95ffb0;
+  --text-bright: #c6ffd4;
+  --muted: #5ec57a;
+  --line: #1b3a26;
+  --glow: rgba(78, 244, 124, 0.22);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 18% 15%, rgba(22, 92, 48, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 5%, rgba(32, 118, 54, 0.18), transparent 35%),
+    linear-gradient(180deg, #020302 0%, #050705 55%, #060a07 100%);
+  line-height: 1.58;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(197, 255, 212, 0.04) 0,
+    rgba(197, 255, 212, 0.04) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.42;
+  z-index: 4;
+}
+
+.terminal-watermarks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.wm {
+  position: absolute;
+  width: clamp(170px, 17vw, 280px);
+  opacity: 0.14;
+  filter: saturate(130%) brightness(1.07);
+  mix-blend-mode: screen;
+}
+
+.wm-cpp {
+  top: 4%;
+  left: -1.5%;
+  transform: rotate(-9deg);
+}
+
+.wm-js {
+  top: 12%;
+  right: 1%;
+  transform: rotate(8deg);
+}
+
+.wm-java {
+  top: 31%;
+  left: 3%;
+  transform: rotate(-6deg);
+}
+
+.wm-python {
+  top: 38%;
+  right: 2%;
+  transform: rotate(10deg);
+}
+
+.wm-sql {
+  top: 54%;
+  left: -1%;
+  transform: rotate(-8deg);
+}
+
+.wm-terraform {
+  top: 55%;
+  left: 40%;
+  transform: rotate(4deg);
+}
+
+.wm-csharp {
+  top: 62%;
+  right: -0.5%;
+  transform: rotate(8deg);
+}
+
+.wm-bash {
+  bottom: 16%;
+  left: 7%;
+  transform: rotate(-7deg);
+}
+
+.wm-yaml {
+  bottom: 8%;
+  right: 8%;
+  transform: rotate(7deg);
+}
+
+.layout {
+  width: min(1020px, 92vw);
+  margin: 2.2rem auto;
+  padding-bottom: 1.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+.terminal {
+  border: 1px solid var(--line);
+  background: linear-gradient(170deg, rgba(13, 23, 16, 0.92) 0%, rgba(8, 14, 10, 0.92) 100%);
+  box-shadow:
+    0 0 0 1px rgba(136, 255, 176, 0.05),
+    0 18px 40px rgba(0, 0, 0, 0.45),
+    0 0 30px var(--glow);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.hero,
+.block,
+.footer {
+  padding: 1.35rem 1.5rem;
+  border-bottom: 1px solid rgba(44, 89, 58, 0.45);
+}
+
+.footer {
+  border-bottom: 0;
+}
+
+.prompt {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+}
+
+.prompt::after {
+  content: " _";
+  display: inline-block;
+  animation: cursor 1s steps(1) infinite;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Share Tech Mono", "JetBrains Mono", monospace;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text-bright);
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
+  color: var(--text-bright);
+}
+
+h2 span {
+  color: var(--muted);
+  margin-right: 0.4rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--text-bright);
+}
+
+p {
+  margin: 0.2rem 0 0.7rem;
+}
+
+.tagline {
+  margin-top: 0.45rem;
+  font-size: 1.05rem;
+  color: var(--text-bright);
+}
+
+.meta {
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+}
+
+.contact-list a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(150, 255, 176, 0.45);
+}
+
+.contact-list a:hover {
+  color: var(--text-bright);
+  border-bottom-color: var(--text-bright);
+}
+
+.job {
+  padding: 0.85rem 0 0.95rem 1rem;
+  border-left: 2px solid rgba(96, 213, 132, 0.35);
+  margin-bottom: 0.7rem;
+}
+
+.job > header p {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.job ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.job li {
+  margin-bottom: 0.35rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1.4rem;
+}
+
+.plain {
+  list-style: square;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.plain li {
+  margin-bottom: 0.35rem;
+}
+
+.skills p {
+  margin: 0 0 0.6rem;
+}
+
+.skills strong {
+  color: var(--text-bright);
+}
+
+.footer p {
+  margin: 0.2rem 0;
+}
+
+.chart-variants {
+  display: grid;
+  gap: 1rem;
+}
+
+.chart-card {
+  border: 1px solid rgba(66, 125, 88, 0.5);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(7, 15, 10, 0.65) 0%, rgba(6, 12, 9, 0.65) 100%);
+  padding: 0.9rem;
+}
+
+.career-scroll {
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+}
+
+.career-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.career-scroll::-webkit-scrollbar-thumb {
+  background: rgba(110, 255, 166, 0.35);
+  border-radius: 999px;
+}
+
+.career-plot {
+  min-width: 760px;
+  border: 1px solid rgba(68, 127, 89, 0.6);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(7, 16, 11, 0.9) 0%, rgba(6, 13, 9, 0.95) 100%);
+  padding: 0.85rem 0.9rem 1rem;
+  box-shadow: inset 0 0 0 1px rgba(126, 255, 177, 0.05);
+}
+
+.career-plot-minimal {
+  border: 1px solid rgba(76, 138, 96, 0.45);
+  box-shadow: none;
+}
+
+.career-plot-minimal .career-track {
+  height: 0.8rem;
+  border-color: rgba(59, 116, 80, 0.38);
+  background: rgba(19, 40, 28, 0.6);
+}
+
+.career-plot-minimal .career-bar {
+  background: linear-gradient(90deg, rgba(116, 255, 169, 0.95) 0%, rgba(166, 255, 200, 0.95) 100%);
+  box-shadow: 0 0 8px rgba(95, 255, 150, 0.25);
+}
+
+.career-axis {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+
+.career-years {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  color: var(--muted);
+  font-size: 0.77rem;
+}
+
+.career-years span:last-child {
+  text-align: right;
+}
+
+.career-rows {
+  display: grid;
+  gap: 0.42rem;
+}
+
+.career-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.career-role {
+  font-size: 0.86rem;
+  color: var(--text-bright);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.career-track {
+  position: relative;
+  height: 0.92rem;
+  border: 1px solid rgba(64, 122, 85, 0.52);
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(
+      to right,
+      rgba(22, 50, 34, 0.52) 0,
+      rgba(22, 50, 34, 0.52) calc(12.5% - 1px),
+      rgba(70, 124, 91, 0.45) calc(12.5% - 1px),
+      rgba(70, 124, 91, 0.45) 12.5%
+    );
+  overflow: hidden;
+}
+
+.career-bar {
+  position: absolute;
+  left: var(--start);
+  width: var(--width);
+  top: 1px;
+  bottom: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(95, 255, 150, 0.92) 0%, rgba(138, 255, 184, 0.98) 100%);
+  box-shadow:
+    0 0 10px rgba(95, 255, 150, 0.4),
+    inset 0 0 6px rgba(9, 39, 21, 0.45);
+}
+
+@keyframes cursor {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .layout {
+    width: min(1020px, 94vw);
+    margin: 1rem auto;
+  }
+
+  .hero,
+  .block,
+  .footer {
+    padding: 1rem 1rem 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .career-axis,
+  .career-row {
+    grid-template-columns: 130px 1fr;
+    gap: 0.55rem;
+  }
+
+  .career-plot {
+    min-width: 680px;
+  }
+
+  .wm {
+    width: clamp(120px, 34vw, 190px);
+    opacity: 0.1;
+  }
+
+  .wm-java,
+  .wm-sql,
+  .wm-bash {
+    display: none;
+  }
+
+  .wm-cpp {
+    top: 5%;
+    left: -8%;
+  }
+
+  .wm-js {
+    top: 20%;
+    right: -8%;
+  }
+
+  .wm-python {
+    top: 45%;
+    right: -8%;
+  }
+
+  .wm-terraform {
+    top: 63%;
+    left: -8%;
+    transform: rotate(-5deg);
+  }
+
+  .wm-csharp {
+    top: 72%;
+    right: -10%;
+    transform: rotate(7deg);
+  }
+
+  .wm-yaml {
+    bottom: 6%;
+    right: -10%;
+  }
+}
+
+@media (max-width: 430px) {
+  .wm-js,
+  .wm-python {
+    display: none;
+  }
+
+  .wm-csharp {
+    top: 60%;
+  }
+
+  .wm-yaml {
+    bottom: 8%;
+    right: -12%;
+  }
+}

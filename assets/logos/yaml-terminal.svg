@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" role="img" aria-label="YAML terminal mark">
+  <rect x="1.5" y="1.5" width="357" height="217" rx="14" fill="none" stroke="#57ff9a" stroke-opacity="0.35"/>
+  <rect x="16" y="18" width="328" height="24" rx="8" fill="none" stroke="#57ff9a" stroke-opacity="0.2"/>
+  <circle cx="31" cy="30" r="4" fill="#57ff9a" fill-opacity="0.45"/>
+  <circle cx="47" cy="30" r="4" fill="#57ff9a" fill-opacity="0.28"/>
+  <circle cx="63" cy="30" r="4" fill="#57ff9a" fill-opacity="0.2"/>
+  <text x="82" y="34" fill="#7cffb0" fill-opacity="0.8" font-size="12" font-family="JetBrains Mono, Consolas, monospace">$ cat config.yaml</text>
+  <text x="86" y="117" fill="#a8ffca" fill-opacity="0.9" font-size="58" font-weight="700" font-family="JetBrains Mono, Consolas, monospace">YAML</text>
+  <text x="66" y="154" fill="#6effa6" fill-opacity="0.6" font-size="13" font-family="JetBrains Mono, Consolas, monospace">service:</text>
+  <text x="82" y="172" fill="#6effa6" fill-opacity="0.6" font-size="13" font-family="JetBrains Mono, Consolas, monospace">runtime: linux</text>
+</svg>
