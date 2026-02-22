@@ -397,31 +397,39 @@ p {
 }
 
 .pie-swatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 0.86rem;
   height: 0.86rem;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
   flex: 0 0 auto;
+  line-height: 1;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.pie-swatch::before {
+  content: "■";
 }
 
 .pie-softtek {
-  background: #1f77b4;
+  color: #1f77b4;
 }
 
 .pie-esvenca {
-  background: #ff7f0e;
+  color: #ff7f0e;
 }
 
 .pie-soaint {
-  background: #2ca02c;
+  color: #2ca02c;
 }
 
 .pie-adamantio {
-  background: #d62728;
+  color: #d62728;
 }
 
 .pie-otros {
-  background: #9467bd;
+  color: #9467bd;
 }
 
 .floating-pdf-btn {
@@ -655,6 +663,11 @@ p {
 
   .pie-legend li {
     color: #111111 !important;
+  }
+
+  .pie-swatch {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .xp-axis {
