@@ -285,9 +285,29 @@ p {
   padding: 0.9rem;
 }
 
+.chart-help {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .career-scroll {
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 0.3rem;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable both-edges;
+  cursor: grab;
+}
+
+.career-scroll.is-dragging {
+  cursor: grabbing;
+}
+
+.career-scroll.is-dragging * {
+  user-select: none;
 }
 
 .career-scroll::-webkit-scrollbar {
@@ -392,6 +412,31 @@ p {
     inset 0 0 6px rgba(9, 39, 21, 0.45);
 }
 
+.floating-pdf-btn {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 6;
+  border: 1px solid rgba(118, 255, 172, 0.62);
+  background: rgba(8, 21, 13, 0.9);
+  color: var(--text-bright);
+  padding: 0.68rem 0.95rem;
+  border-radius: 999px;
+  font: 600 0.86rem/1 "JetBrains Mono", "Consolas", monospace;
+  letter-spacing: 0.01em;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.42),
+    0 0 12px rgba(110, 255, 166, 0.2);
+  cursor: pointer;
+}
+
+.floating-pdf-btn:hover {
+  border-color: rgba(178, 255, 204, 0.85);
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.48),
+    0 0 14px rgba(129, 255, 179, 0.28);
+}
+
 @keyframes cursor {
   0%,
   49% {
@@ -433,6 +478,11 @@ p {
 
   .career-plot {
     min-width: 680px;
+  }
+
+  .floating-pdf-btn {
+    padding: 0.62rem 0.88rem;
+    font-size: 0.8rem;
   }
 
   .wm {
@@ -492,5 +542,80 @@ p {
   .wm-yaml {
     bottom: 8%;
     right: -12%;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #101010 !important;
+    overflow: visible !important;
+  }
+
+  body::before,
+  .terminal-watermarks,
+  .floating-pdf-btn {
+    display: none !important;
+  }
+
+  .layout {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .terminal {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  .hero,
+  .block,
+  .footer {
+    border-color: #d6d6d6;
+    color: #111111;
+    page-break-inside: avoid;
+  }
+
+  .prompt::after {
+    display: none;
+  }
+
+  a {
+    color: #111111;
+    text-decoration: none;
+  }
+
+  .career-scroll {
+    overflow: visible;
+    cursor: default;
+  }
+
+  .career-axis,
+  .career-row {
+    grid-template-columns: 145px 1fr;
+  }
+
+  .career-role {
+    font-size: 0.75rem;
+    color: #222222;
+  }
+
+  .career-plot {
+    min-width: 0;
+    border-color: #bcbcbc;
+    background: #ffffff;
+  }
+
+  .career-track {
+    border-color: #c8c8c8;
+    background: #f5f5f5;
+  }
+
+  .career-bar {
+    background: #46b96b;
+    box-shadow: none;
   }
 }
