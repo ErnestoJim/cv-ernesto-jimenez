@@ -13,7 +13,7 @@ Sitio estatico del CV, preparado para GitHub Pages.
 - `styles.css`: estilos visuales (tema terminal retro).
 - `script.js`: script ligero para elementos dinamicos.
 - `assets/`: logos y recursos graficos.
-- `Ernesto Jimenez.docx`: documento fuente del contenido.
+- `assets/Ernesto Jimenez.docx`: documento fuente del contenido.
 
 ## Vista local
 

@@ -273,6 +273,11 @@ p {
   margin: 0.2rem 0;
 }
 
+.pdf-only,
+.pdf-only-photo {
+  display: none;
+}
+
 .chart-card {
   border: 1px solid rgba(66, 125, 88, 0.5);
   border-radius: 12px;
@@ -354,6 +359,69 @@ p {
   font-size: 0.77rem;
   color: var(--muted);
   text-align: right;
+}
+
+.pie-layout {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.pie-svg {
+  width: 150px;
+  height: 150px;
+}
+
+.pie-center-text {
+  fill: #1a1a1a;
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 3.8px;
+  font-weight: 700;
+}
+
+.pie-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.38rem;
+}
+
+.pie-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111111;
+  font-size: 0.86rem;
+}
+
+.pie-swatch {
+  width: 0.86rem;
+  height: 0.86rem;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  flex: 0 0 auto;
+}
+
+.pie-softtek {
+  background: #1f77b4;
+}
+
+.pie-esvenca {
+  background: #ff7f0e;
+}
+
+.pie-soaint {
+  background: #2ca02c;
+}
+
+.pie-adamantio {
+  background: #d62728;
+}
+
+.pie-otros {
+  background: #9467bd;
 }
 
 .floating-pdf-btn {
@@ -532,6 +600,11 @@ p {
     page-break-inside: avoid;
   }
 
+  .hero {
+    position: relative;
+    padding-right: 8.5rem;
+  }
+
   .prompt::after {
     display: none;
   }
@@ -542,6 +615,45 @@ p {
   }
 
   .job > header p {
+    color: #111111 !important;
+  }
+
+  .pdf-only {
+    display: block !important;
+  }
+
+  .pdf-only-photo {
+    display: block !important;
+    position: absolute;
+    top: 1.4rem;
+    right: 1.5rem;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d2d2d2;
+  }
+
+  .xp-chart {
+    display: none !important;
+  }
+
+  .pie-chart {
+    border-color: #d2d2d2;
+    background: #ffffff;
+  }
+
+  .pie-layout {
+    grid-template-columns: 140px 1fr;
+    gap: 0.8rem;
+  }
+
+  .pie-svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .pie-legend li {
     color: #111111 !important;
   }
 
