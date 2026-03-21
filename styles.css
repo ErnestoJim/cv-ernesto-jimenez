@@ -396,51 +396,29 @@ p {
   font-size: 0.86rem;
 }
 
-.pie-swatch {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.pie-swatch-svg {
   width: 0.86rem;
   height: 0.86rem;
   flex: 0 0 auto;
-  line-height: 1;
-  font-size: 0.95rem;
-  font-weight: 700;
+  display: block;
 }
 
-.pie-swatch::before {
-  content: "■";
-}
-
-.pie-softtek {
-  color: #1f77b4;
-}
-
-.pie-esvenca {
-  color: #ff7f0e;
-}
-
-.pie-soaint {
-  color: #2ca02c;
-}
-
-.pie-adamantio {
-  color: #d62728;
-}
-
-.pie-otros {
-  color: #9467bd;
-}
-
-.floating-pdf-btn {
+.floating-btns {
   position: fixed;
   right: max(1rem, env(safe-area-inset-right));
   bottom: max(1rem, env(safe-area-inset-bottom));
   z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.floating-pdf-btn,
+.floating-lang-btn {
   border: 1px solid rgba(118, 255, 172, 0.62);
   background: rgba(8, 21, 13, 0.9);
   color: var(--text-bright);
-  padding: 0.68rem 0.95rem;
   border-radius: 999px;
   font: 600 0.86rem/1 "JetBrains Mono", "Consolas", monospace;
   letter-spacing: 0.01em;
@@ -450,7 +428,16 @@ p {
   cursor: pointer;
 }
 
-.floating-pdf-btn:hover {
+.floating-pdf-btn {
+  padding: 0.68rem 0.95rem;
+}
+
+.floating-lang-btn {
+  padding: 0.52rem 0.85rem;
+}
+
+.floating-pdf-btn:hover,
+.floating-lang-btn:hover {
   border-color: rgba(178, 255, 204, 0.85);
   box-shadow:
     0 10px 24px rgba(0, 0, 0, 0.48),
@@ -583,7 +570,7 @@ p {
 
   body::before,
   .terminal-watermarks,
-  .floating-pdf-btn {
+  .floating-btns {
     display: none !important;
   }
 
@@ -638,6 +625,7 @@ p {
     width: 96px;
     height: 96px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 8px;
     border: 1px solid #d2d2d2;
   }
@@ -665,7 +653,7 @@ p {
     color: #111111 !important;
   }
 
-  .pie-swatch {
+  .pie-swatch-svg {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }

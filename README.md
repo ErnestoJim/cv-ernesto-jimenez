@@ -1,35 +1,39 @@
-# CV - Ernesto Jimenez
+# CV – Ernesto Jimenez
 
-Sitio estatico del CV, preparado para GitHub Pages.
+Sitio estático del CV personal publicado en GitHub Pages, con tema visual de terminal retro.
 
-## Enlaces
+**Demo:** [ernestojim.github.io/cv-ernesto-jimenez](https://ernestojim.github.io/cv-ernesto-jimenez/)
 
-- Repositorio: `https://github.com/ErnestoJim/cv-ernesto-jimenez`
-- Sitio publicado: `https://ernestojim.github.io/cv-ernesto-jimenez/`
+## Características
 
-## Estructura
+- **Tema terminal** — tipografía monoespaciada (JetBrains Mono), paleta verde oscuro, marcas de agua SVG y scanlines CSS.
+- **Bilingüe** — botón EN/ES que cambia todo el contenido entre español e inglés en tiempo real, sin recarga de página.
+- **Visualización de experiencia** — gráfico de barras con duración por empresa (web) y gráfico de torta (solo PDF/impresión).
+- **Exportación a PDF** — botón flotante que activa `window.print()` con estilos de impresión dedicados.
+- **Diseño responsivo** — adaptado a móvil, tableta y escritorio.
+- **Desarrollado con IA** — flujo de trabajo asistido por [Cursor](https://cursor.sh/), [Claude](https://claude.ai/) y [ChatGPT](https://chat.openai.com/).
 
-- `index.html`: contenido principal del CV.
-- `styles.css`: estilos visuales (tema terminal retro).
-- `script.js`: script ligero para elementos dinamicos.
-- `assets/`: logos y recursos graficos.
-- `assets/Ernesto Jimenez.docx`: documento fuente del contenido.
+## Estructura del proyecto
 
-## Vista local
+```
+index.html   — contenido principal con atributos data-i18n para traducciones
+styles.css   — estilos visuales, media queries para responsive e impresión
+script.js    — año dinámico, diccionario i18n, toggle de idioma, exportación PDF
+assets/      — logos SVG de tecnologías usados como marcas de agua
+```
 
-1. Abre una terminal en la carpeta del proyecto.
-2. Ejecuta:
+## Ejecución local
 
-```powershell
+```bash
 python -m http.server 5500
 ```
 
-3. Abre en el navegador:
+Abre [http://localhost:5500](http://localhost:5500) en el navegador. También funciona con Live Server (VS Code / Cursor) o cualquier servidor estático equivalente.
 
-```text
-http://localhost:5500
-```
+## Despliegue
 
-## GitHub Pages
+Configurado para GitHub Pages desde la rama `main` en la raíz (`/`). Cada push a `main` actualiza el sitio automáticamente.
 
-Configurado para desplegar desde la rama `main` en la raiz (`/`).
+## Repositorio
+
+[github.com/ErnestoJim/cv-ernesto-jimenez](https://github.com/ErnestoJim/cv-ernesto-jimenez)
