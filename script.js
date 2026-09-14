@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const i18n = {
     es: {
       meta_section: "Curriculum de Ernesto Jimenez",
-      tagline: "Technical Leader",
+      tagline: "Senior Software Engineer · Technical Lead · Cloud &amp; DevOps · .NET / AWS / Terraform · AI-Assisted Development",
       meta_location: "Madrid, Comunidad de Madrid, España",
       cmd_summary: "<span>$</span> resumen_profesional",
       cmd_experience: "<span>$</span> experiencia_laboral",
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     en: {
       meta_section: "Ernesto Jimenez's Resume",
-      tagline: "Technical Leader",
+      tagline: "Senior Software Engineer · Technical Lead · Cloud &amp; DevOps · .NET / AWS / Terraform · AI-Assisted Development",
       meta_location: "Madrid, Community of Madrid, Spain",
       cmd_summary: "<span>$</span> professional_summary",
       cmd_experience: "<span>$</span> work_experience",
