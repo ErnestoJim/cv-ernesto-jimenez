@@ -26,8 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
       summary_p2:
         "Experto en Git y GitHub para flujos colaborativos, con experiencia en infraestructura como código con Terraform en entornos cloud y on-premise. Integra programación asistida por IA con Cursor, Claude y ChatGPT para mejorar productividad, calidad de código e innovación técnica.",
       job_softtek: "Desarrollador de software senior | Mayo 2022 - Presente | Madrid, España (+3 años)",
+      job_softtek_b1:
+        "Lideré la migración de sistemas internos críticos del cliente RSC desde infraestructura on-premise (servidores y máquinas virtuales) hacia AWS, mejorando la eficiencia y reduciendo costes operativos.",
+      job_softtek_b2:
+        "Migré aplicaciones .NET a arquitecturas cloud en AWS, automatizando la infraestructura con Terraform y los despliegues con GitHub Actions.",
+      job_softtek_b3: "Diseñé módulos de Terraform reutilizables para estandarizar el aprovisionamiento de recursos AWS entre proyectos.",
       job_akka: "Senior Consult Developer | Julio 2021 - Abril 2022 | Madrid, España (10 meses)",
+      job_akka_b1:
+        "Mantenimiento y evolución de sistemas operativos embebidos para el control de máquinas de generación de energía eólica, desarrollados en C y shell script.",
+      job_akka_b2: "Diagnostiqué y resolví incidencias críticas en sistemas de control de aerogeneradores en producción.",
       job_ineco: "Analista programador | Enero 2021 - Julio 2021 (7 meses)",
+      job_ineco_b1: "Migré el sistema de compras y control de AENA desde una base de código legacy y obsoleta a tecnologías modernas de .NET.",
+      job_ineco_b2: "Desarrollé nuevas funcionalidades con .NET y Angular como parte de la modernización del sistema.",
       job_apara: "Ingeniero de software | Febrero 2020 - Noviembre 2020 (10 meses)",
       job_minsait: "Senior Software Engineer | Marzo 2019 - Febrero 2020 | Madrid, España (1 año)",
       job_teamnet: "Full-stack Developer | Junio 2018 - Febrero 2019 | Madrid, España (9 meses)",
@@ -79,8 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
       summary_p2:
         "Expert in Git and GitHub for collaborative workflows, with experience in infrastructure as code with Terraform in cloud and on-premise environments. Integrates AI-assisted programming with Cursor, Claude and ChatGPT to improve productivity, code quality and technical innovation.",
       job_softtek: "Senior Software Developer | May 2022 - Present | Madrid, Spain (+3 years)",
+      job_softtek_b1:
+        "Led the migration of critical internal systems for client RSC from on-premise infrastructure (local servers and virtual machines) to AWS, improving efficiency and reducing operating costs.",
+      job_softtek_b2:
+        "Migrated .NET applications to cloud architectures on AWS, automating infrastructure with Terraform and deployments with GitHub Actions.",
+      job_softtek_b3: "Designed reusable Terraform modules to standardize AWS resource provisioning across projects.",
       job_akka: "Senior Consult Developer | July 2021 - April 2022 | Madrid, Spain (10 months)",
+      job_akka_b1:
+        "Maintained and evolved embedded operating systems for wind power generation equipment control, developed in C and shell scripting.",
+      job_akka_b2: "Diagnosed and resolved critical incidents in production wind turbine control systems.",
       job_ineco: "Programmer Analyst | January 2021 - July 2021 (7 months)",
+      job_ineco_b1: "Migrated AENA's procurement and control system from a legacy, obsolete codebase to modern .NET technologies.",
+      job_ineco_b2: "Developed new features using .NET and Angular as part of the system modernization effort.",
       job_apara: "Software Engineer | February 2020 - November 2020 (10 months)",
       job_minsait: "Senior Software Engineer | March 2019 - February 2020 | Madrid, Spain (1 year)",
       job_teamnet: "Full-stack Developer | June 2018 - February 2019 | Madrid, Spain (9 months)",
