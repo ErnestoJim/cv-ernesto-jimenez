@@ -22,9 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
       cmd_languages: "<span>$</span> idiomas",
       cmd_skills: "<span>$</span> habilidades_tecnicas",
       summary_p1:
-        "Consultor técnico con amplia experiencia en el sector de tecnologías de la información y servicios, especializado en diseño, desarrollo e implementación de soluciones software con C++, C#, Java, JavaScript, SQL, C y Python.",
+        "Ingeniero de software senior y Technical Lead con más de 15 años de experiencia diseñando y construyendo soluciones de software empresarial. Especializado en .NET/C#, arquitecturas cloud en AWS, infraestructura como código con Terraform, CI/CD y sistemas distribuidos.",
       summary_p2:
-        "Experto en Git y GitHub para flujos colaborativos, con experiencia en infraestructura como código con Terraform en entornos cloud y on-premise. Integra programación asistida por IA con Cursor, Claude y ChatGPT para mejorar productividad, calidad de código e innovación técnica.",
+        "Experiencia diseñando arquitecturas orientadas a eventos, integraciones cloud, pipelines de datos y entornos AWS multi-cuenta seguros. Sólida base en desarrollo de software, DevOps y resolución de problemas técnicos.",
+      summary_p3:
+        "Actualmente incorporando ingeniería de software asistida por IA en los flujos de trabajo de desarrollo, análisis de arquitectura, revisión de código, documentación y automatización.",
       job_softtek: "Desarrollador de software senior | Mayo 2022 - Presente | Madrid, España (+3 años)",
       job_softtek_b1:
         "Lideré la migración de sistemas internos críticos del cliente RSC desde infraestructura on-premise (servidores y máquinas virtuales) hacia AWS, mejorando la eficiencia y reduciendo costes operativos.",
@@ -85,9 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
       cmd_languages: "<span>$</span> languages",
       cmd_skills: "<span>$</span> technical_skills",
       summary_p1:
-        "Technical consultant with extensive experience in the information technology and services sector, specializing in design, development and implementation of software solutions with C++, C#, Java, JavaScript, SQL, C and Python.",
+        "Senior Software Engineer and Technical Lead with 15+ years of experience designing and building enterprise software solutions. Specialized in .NET/C#, AWS cloud architectures, Infrastructure as Code with Terraform, CI/CD and distributed systems.",
       summary_p2:
-        "Expert in Git and GitHub for collaborative workflows, with experience in infrastructure as code with Terraform in cloud and on-premise environments. Integrates AI-assisted programming with Cursor, Claude and ChatGPT to improve productivity, code quality and technical innovation.",
+        "Experienced in designing event-driven architectures, cloud integrations, data pipelines and secure multi-account AWS environments. Strong background in software development, DevOps and technical problem solving.",
+      summary_p3:
+        "Currently incorporating AI-assisted software engineering into development workflows, architecture analysis, code review, documentation and automation.",
       job_softtek: "Senior Software Developer | May 2022 - Present | Madrid, Spain (+3 years)",
       job_softtek_b1:
         "Led the migration of critical internal systems for client RSC from on-premise infrastructure (local servers and virtual machines) to AWS, improving efficiency and reducing operating costs.",
