@@ -265,6 +265,18 @@ p {
   margin: 0 0 0.6rem;
 }
 
+.skills h3 {
+  margin: 1.1rem 0 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.skills h3:first-of-type {
+  margin-top: 0.3rem;
+}
+
 .skills strong {
   color: var(--text-bright);
 }
@@ -610,6 +622,14 @@ p {
   }
 
   .job > header p {
+    color: #111111 !important;
+  }
+
+  .skills h3 {
+    color: #444444 !important;
+  }
+
+  .skills strong {
     color: #111111 !important;
   }
 

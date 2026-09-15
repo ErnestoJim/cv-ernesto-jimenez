@@ -56,23 +56,30 @@ document.addEventListener("DOMContentLoaded", () => {
       edu_2: "Universidad de Oriente VE - Ingeniería en Sistemas (2003 - 2009)",
       lang_en: "Inglés: Nivel profesional",
       lang_es: "Español: Nativo o Bilingüe",
-      skills_highlight: "<strong>Tecnologías destacadas:</strong> C#, C++, JavaScript, Bash, Terraform y GitHub.",
+      skills_highlight: "<strong>Tecnologías destacadas:</strong> .NET/C#, AWS, Terraform, CI/CD, C++ y Git/GitHub.",
+      skills_group_devops: "Cloud &amp; DevOps",
+      skills_aws:
+        "<strong>AWS:</strong> Diseño de arquitecturas cloud seguras multi-cuenta, migración de sistemas on-premise a servicios gestionados e integraciones cloud.",
+      skills_terraform:
+        "<strong>Terraform:</strong> IaC para automatización, provisión y gestión eficiente de recursos cloud y on-premise con módulos reutilizables.",
+      skills_cicd:
+        "<strong>CI/CD:</strong> Pipelines de integración y despliegue continuo con GitHub Actions para entregas rápidas y confiables.",
+      skills_git:
+        "<strong>Git y GitHub:</strong> Gestión avanzada de ramas, fusiones, issues y pull requests para calidad y trazabilidad del código.",
+      skills_bash:
+        "<strong>Bash:</strong> Automatización de tareas en Linux, despliegues, monitorización, backup y mantenimiento de infraestructuras.",
+      skills_group_dev: "Desarrollo de Software",
       skills_csharp:
-        "<strong>C#:</strong> Más de 10 años diseñando, desarrollando, manteniendo y optimizando sistemas con esta tecnología.",
+        "<strong>.NET/C#:</strong> Más de 10 años diseñando, desarrollando, manteniendo y optimizando sistemas empresariales y arquitecturas orientadas a eventos con esta tecnología.",
       skills_cpp:
         "<strong>C++:</strong> Desarrollo de aplicaciones de alto rendimiento, sistemas críticos, algoritmos complejos y componentes embebidos.",
       skills_js:
         "<strong>JavaScript:</strong> Desarrollo frontend y backend con React y Node.js, integración de APIs y optimización de experiencia de usuario.",
-      skills_bash:
-        "<strong>Bash:</strong> Automatización de tareas en Linux, despliegues, monitorización, backup y mantenimiento de infraestructuras.",
-      skills_terraform:
-        "<strong>Terraform:</strong> IaC para automatización, provisión y gestión eficiente de recursos cloud y on-premise con módulos reutilizables.",
-      skills_git:
-        "<strong>Git y GitHub:</strong> Gestión avanzada de ramas, fusiones, CI/CD, issues y pull requests para calidad y trazabilidad del código.",
+      skills_other:
+        "<strong>Otros:</strong> C, Java, SQL, Python, YAML, administración y desarrollo sobre Windows y Linux.",
+      skills_group_ai: "IA en el flujo de trabajo",
       skills_ai:
         "<strong>IA en desarrollo:</strong> Uso de Cursor, Claude y ChatGPT como herramientas de desarrollo asistido por IA, integradas en el flujo de trabajo para generación y revisión de código, refactoring, documentación y resolución de problemas complejos.",
-      skills_other:
-        "<strong>Otros:</strong> .NET, C, Java, SQL, Python, YAML, administración y desarrollo sobre Windows y Linux.",
       footer_prompt: '$ echo "Disponible para liderazgo técnico y consultoría de software"',
       export_pdf: "Exportar PDF",
     },
@@ -121,23 +128,30 @@ document.addEventListener("DOMContentLoaded", () => {
       edu_2: "Universidad de Oriente VE - Systems Engineering (2003 - 2009)",
       lang_en: "English: Professional level",
       lang_es: "Spanish: Native or Bilingual",
-      skills_highlight: "<strong>Featured technologies:</strong> C#, C++, JavaScript, Bash, Terraform and GitHub.",
+      skills_highlight: "<strong>Featured technologies:</strong> .NET/C#, AWS, Terraform, CI/CD, C++ and Git/GitHub.",
+      skills_group_devops: "Cloud &amp; DevOps",
+      skills_aws:
+        "<strong>AWS:</strong> Design of secure multi-account cloud architectures, migration of on-premise systems to managed services, and cloud integrations.",
+      skills_terraform:
+        "<strong>Terraform:</strong> IaC for automation, provisioning and efficient management of cloud and on-premise resources with reusable modules.",
+      skills_cicd:
+        "<strong>CI/CD:</strong> Continuous integration and deployment pipelines with GitHub Actions for fast, reliable releases.",
+      skills_git:
+        "<strong>Git &amp; GitHub:</strong> Advanced branch management, merges, issues and pull requests for code quality and traceability.",
+      skills_bash:
+        "<strong>Bash:</strong> Task automation in Linux, deployments, monitoring, backup and infrastructure maintenance.",
+      skills_group_dev: "Software Development",
       skills_csharp:
-        "<strong>C#:</strong> Over 10 years designing, developing, maintaining and optimizing systems with this technology.",
+        "<strong>.NET/C#:</strong> Over 10 years designing, developing, maintaining and optimizing enterprise systems and event-driven architectures with this technology.",
       skills_cpp:
         "<strong>C++:</strong> Development of high-performance applications, critical systems, complex algorithms and embedded components.",
       skills_js:
         "<strong>JavaScript:</strong> Frontend and backend development with React and Node.js, API integration and user experience optimization.",
-      skills_bash:
-        "<strong>Bash:</strong> Task automation in Linux, deployments, monitoring, backup and infrastructure maintenance.",
-      skills_terraform:
-        "<strong>Terraform:</strong> IaC for automation, provisioning and efficient management of cloud and on-premise resources with reusable modules.",
-      skills_git:
-        "<strong>Git &amp; GitHub:</strong> Advanced branch management, merges, CI/CD, issues and pull requests for code quality and traceability.",
+      skills_other:
+        "<strong>Other:</strong> C, Java, SQL, Python, YAML, administration and development on Windows and Linux.",
+      skills_group_ai: "AI in the workflow",
       skills_ai:
         "<strong>AI in development:</strong> Use of Cursor, Claude and ChatGPT as AI-assisted development tools, integrated into the workflow for code generation and review, refactoring, documentation and complex problem solving.",
-      skills_other:
-        "<strong>Other:</strong> .NET, C, Java, SQL, Python, YAML, administration and development on Windows and Linux.",
       footer_prompt: '$ echo "Available for technical leadership and software consulting"',
       export_pdf: "Export PDF",
     },
