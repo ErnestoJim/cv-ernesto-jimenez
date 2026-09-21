@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       meta_location: "Madrid, Comunidad de Madrid, España",
       cmd_summary: "<span>$</span> resumen_profesional",
       cmd_experience: "<span>$</span> experiencia_laboral",
-      cmd_visual: "<span>$</span> experiencia_grafica",
       cmd_education: "<span>$</span> educacion",
       cmd_languages: "<span>$</span> idiomas",
       cmd_skills: "<span>$</span> habilidades_tecnicas",
@@ -48,10 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
       job_esvenca_anal: "Analista de sistemas | Octubre 2012 - Julio 2014 (1 año 10 meses)",
       job_adamantio: "Analista, Desarrollador y Consultor | Abril 2011 - Septiembre 2012 (1 año 6 meses)",
       job_styc: "Programador | Junio 2009 - Junio 2010 (1 año 1 mes)",
-      chart_aria_bar: "Gráfico de barras con duración aproximada por etapa laboral en años",
-      chart_aria_pie: "Gráfico de torta con distribución de experiencia laboral por etapa principal",
-      chart_help_bar: "Duración aproximada por etapa laboral (en años).",
-      chart_help_pie: "Distribución de experiencia por etapa principal (solo PDF).",
       edu_1: "Universidad Europea - Máster en Big Data, Informática (2016 - 2017)",
       edu_2: "Universidad de Oriente VE - Ingeniería en Sistemas (2003 - 2009)",
       lang_en: "Inglés: Nivel profesional",
@@ -74,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       skills_cpp:
         "<strong>C++:</strong> Desarrollo de aplicaciones de alto rendimiento, sistemas críticos, algoritmos complejos y componentes embebidos.",
       skills_js:
-        "<strong>JavaScript:</strong> Desarrollo frontend y backend con React y Node.js, integración de APIs y optimización de experiencia de usuario.",
+        "<strong>JavaScript:</strong> Desarrollo frontend, integración de APIs y optimización de experiencia de usuario.",
       skills_other:
         "<strong>Otros:</strong> C, Java, SQL, Python, YAML, administración y desarrollo sobre Windows y Linux.",
       skills_group_ai: "IA en el flujo de trabajo",
@@ -89,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
       meta_location: "Madrid, Community of Madrid, Spain",
       cmd_summary: "<span>$</span> professional_summary",
       cmd_experience: "<span>$</span> work_experience",
-      cmd_visual: "<span>$</span> visual_experience",
       cmd_education: "<span>$</span> education",
       cmd_languages: "<span>$</span> languages",
       cmd_skills: "<span>$</span> technical_skills",
@@ -120,10 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
       job_esvenca_anal: "Systems Analyst | October 2012 - July 2014 (1 year 10 months)",
       job_adamantio: "Analyst, Developer and Consultant | April 2011 - September 2012 (1 year 6 months)",
       job_styc: "Programmer | June 2009 - June 2010 (1 year 1 month)",
-      chart_aria_bar: "Bar chart with approximate duration per work stage in years",
-      chart_aria_pie: "Pie chart with work experience distribution by main stage",
-      chart_help_bar: "Approximate duration per work stage (in years).",
-      chart_help_pie: "Experience distribution by main stage (PDF only).",
       edu_1: "Universidad Europea - Master's in Big Data, Computer Science (2016 - 2017)",
       edu_2: "Universidad de Oriente VE - Systems Engineering (2003 - 2009)",
       lang_en: "English: Professional level",
@@ -146,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       skills_cpp:
         "<strong>C++:</strong> Development of high-performance applications, critical systems, complex algorithms and embedded components.",
       skills_js:
-        "<strong>JavaScript:</strong> Frontend and backend development with React and Node.js, API integration and user experience optimization.",
+        "<strong>JavaScript:</strong> Frontend development, API integration and user experience optimization.",
       skills_other:
         "<strong>Other:</strong> C, Java, SQL, Python, YAML, administration and development on Windows and Linux.",
       skills_group_ai: "AI in the workflow",

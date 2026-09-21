@@ -8,7 +8,6 @@ Sitio estático del CV personal publicado en GitHub Pages, con tema visual de te
 
 - **Tema terminal** — tipografía monoespaciada (JetBrains Mono), paleta verde oscuro, marcas de agua SVG y scanlines CSS.
 - **Bilingüe** — botón EN/ES que cambia todo el contenido entre español e inglés en tiempo real, sin recarga de página.
-- **Visualización de experiencia** — gráfico de barras con duración por empresa (web) y gráfico de torta (solo PDF/impresión).
 - **Exportación a PDF** — botón flotante que activa `window.print()` con estilos de impresión dedicados.
 - **Diseño responsivo** — adaptado a móvil, tableta y escritorio.
 - **Desarrollado con IA** — flujo de trabajo asistido por [Cursor](https://cursor.sh/), [Claude](https://claude.ai/) y [ChatGPT](https://chat.openai.com/).
