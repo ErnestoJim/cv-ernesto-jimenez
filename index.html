@@ -1,204 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV de Ernesto Jimenez: Technical Lead, Senior Software Engineer y especialista en Cloud & DevOps.">
   <title>Ernesto Jimenez | CV</title>
-  <meta name="description" content="CV de Ernesto Jimenez, Senior Software Engineer y Technical Lead especializado en desarrollo .NET/C# y en Cloud & DevOps con AWS, Terraform y CI/CD, con desarrollo asistido por IA con Cursor, Claude y ChatGPT." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="terminal-watermarks" aria-hidden="true">
-    <img class="wm wm-cpp" src="assets/logos/cpp-terminal.svg" alt="" />
-    <img class="wm wm-js" src="assets/logos/javascript-terminal.svg" alt="" />
-    <img class="wm wm-java" src="assets/logos/java-terminal.svg" alt="" />
-    <img class="wm wm-python" src="assets/logos/python-terminal.svg" alt="" />
-    <img class="wm wm-sql" src="assets/logos/sql-terminal.svg" alt="" />
-    <img class="wm wm-terraform" src="assets/logos/terraform-terminal.svg" alt="" />
-    <img class="wm wm-csharp" src="assets/logos/csharp-terminal.svg" alt="" />
-    <img class="wm wm-bash" src="assets/logos/bash-terminal.svg" alt="" />
-    <img class="wm wm-yaml" src="assets/logos/yaml-terminal.svg" alt="" />
-  </div>
-
-  <main class="layout">
-    <section class="terminal" aria-label="Curriculum de Ernesto Jimenez" data-i18n-aria="meta_section">
-      <header class="hero">
-        <p class="prompt">$ whoami</p>
+  <div class="page-shell">
+    <div class="toolbar" aria-label="Opciones del currículum" data-i18n-aria="toolbar_label">
+      <button id="lang-btn" class="toolbar-btn language-btn" type="button" aria-label="Switch to English">EN</button>
+      <button id="export-pdf-btn" class="toolbar-btn export-btn" type="button" data-i18n="export_pdf">Exportar PDF</button>
+    </div>
+    <main class="resume" aria-label="Currículum de Ernesto Jimenez" data-i18n-aria="resume_label">
+      <header class="resume-header">
         <h1>Ernesto Jimenez</h1>
-        <p class="tagline" data-i18n="tagline">Senior Software Engineer · Technical Lead · Cloud &amp; DevOps · .NET / AWS / Terraform · AI-Assisted Development</p>
-        <p class="meta" data-i18n="meta_location">Madrid, Comunidad de Madrid, España</p>
+        <p class="headline" data-i18n="headline">Technical Lead · Senior Software Engineer · Cloud &amp; DevOps · Backend</p>
         <ul class="contact-list">
+          <li data-i18n="location">Madrid, España</li>
           <li><a href="mailto:ernestojimenezg@gmail.com">ernestojimenezg@gmail.com</a></li>
           <li><a href="https://www.linkedin.com/in/ernesto-jimenez-30130240" target="_blank" rel="noreferrer">linkedin.com/in/ernesto-jimenez-30130240</a></li>
         </ul>
-        <img
-          class="pdf-only-photo"
-          src="assets/doc-source/foto%20para%20cv.png"
-          alt="Foto de Ernesto Jimenez"
-          loading="eager"
-        />
       </header>
-
-      <section class="block">
-        <h2 data-i18n="cmd_summary"><span>$</span> resumen_profesional</h2>
-        <p data-i18n="summary_p1">
-          Ingeniero de software senior y Technical Lead con más de 15 años de experiencia diseñando y construyendo
-          soluciones de software empresarial. Especializado en .NET/C#, arquitecturas cloud en AWS, infraestructura
-          como código con Terraform, CI/CD y sistemas distribuidos.
-        </p>
-        <p data-i18n="summary_p2">
-          Experiencia diseñando arquitecturas orientadas a eventos, integraciones cloud, pipelines de datos y entornos
-          AWS multi-cuenta seguros. Sólida base en desarrollo de software, DevOps y resolución de problemas técnicos.
-        </p>
-        <p data-i18n="summary_p3">
-          Actualmente incorporando ingeniería de software asistida por IA en los flujos de trabajo de desarrollo,
-          análisis de arquitectura, revisión de código, documentación y automatización.
-        </p>
+      <section class="resume-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary_title">Perfil profesional</h2>
+        <p class="summary" data-i18n="summary">Technical Lead e ingeniero de software senior con más de 15 años de experiencia diseñando y entregando soluciones empresariales. He liderado equipos de hasta 15 personas y acompañado el desarrollo de perfiles junior. Tomo decisiones de arquitectura y tecnología según las necesidades de rendimiento y entrega. Combino experiencia en AWS, Terraform y CI/CD con desarrollo backend en .NET/C#, JavaScript y Python, arquitecturas orientadas a eventos y sistemas distribuidos. Integro herramientas de IA en revisión de código, refactorización, documentación y automatización.</p>
       </section>
-
-      <section class="block">
-        <h2 data-i18n="cmd_experience"><span>$</span> experiencia_laboral</h2>
-
-        <article class="job">
-          <header>
-            <h3>Softtek</h3>
-            <p data-i18n="job_softtek">Desarrollador de software senior | Mayo 2022 - Presente | Madrid, España (+3 años)</p>
-          </header>
-          <ul>
-            <li data-i18n="job_softtek_b1">Lideré la migración de sistemas internos críticos del cliente RSC desde infraestructura on-premise (servidores y máquinas virtuales) hacia AWS, mejorando la eficiencia y reduciendo costes operativos.</li>
-            <li data-i18n="job_softtek_b2">Migré aplicaciones .NET a arquitecturas cloud en AWS, automatizando la infraestructura con Terraform y los despliegues con GitHub Actions.</li>
-            <li data-i18n="job_softtek_b3">Diseñé módulos de Terraform reutilizables para estandarizar el aprovisionamiento de recursos AWS entre proyectos.</li>
+      <section class="resume-section" aria-labelledby="experience-title">
+        <h2 id="experience-title" data-i18n="experience_title">Experiencia profesional</h2>
+        <article class="experience">
+          <div class="experience-heading"><div><h3>Softtek</h3><p class="role" data-i18n="softtek_role">Desarrollador de software senior / Technical Lead · Madrid, España</p></div><p class="date" data-i18n="softtek_date">May 2022 – Actualidad</p></div>
+          <ul class="achievement-list">
+            <li data-i18n="softtek_1">Lideré la migración a AWS de sistemas internos críticos del cliente RSC desde servidores y máquinas virtuales locales, mejorando la eficiencia y reduciendo costes operativos.</li>
+            <li data-i18n="softtek_2">Impulsé decisiones de arquitectura basadas en rendimiento: reduje los arranques en frío de AWS Lambda de más de 5 segundos (hasta unos 10 en el peor caso) a menos de 1 segundo al reconstruir determinadas API .NET en JavaScript y Python; optimicé .NET cuando el cliente requería mantener esa tecnología.</li>
+            <li data-i18n="softtek_3">Diseñé módulos reutilizables de Terraform para estandarizar el aprovisionamiento de recursos AWS entre proyectos.</li>
+            <li data-i18n="softtek_4">Migré aplicaciones .NET a AWS con infraestructura gestionada mediante Terraform y despliegues con GitHub Actions en YAML, usando automatización con Bash cuando fue posible.</li>
           </ul>
         </article>
-
-        <article class="job">
-          <header>
-            <h3>Akka Technologies</h3>
-            <p data-i18n="job_akka">Senior Consult Developer | Julio 2021 - Abril 2022 | Madrid, España (10 meses)</p>
-          </header>
-          <ul>
-            <li data-i18n="job_akka_b1">Mantenimiento y evolución de sistemas operativos embebidos para el control de máquinas de generación de energía eólica, desarrollados en C y shell script.</li>
-            <li data-i18n="job_akka_b2">Diagnostiqué y resolví incidencias críticas en sistemas de control de aerogeneradores en producción.</li>
+        <article class="experience">
+          <div class="experience-heading"><div><h3>Akka Technologies</h3><p class="role" data-i18n="akka_role">Senior Consult Developer · Madrid, España</p></div><p class="date" data-i18n="akka_date">Jul 2021 – Abr 2022</p></div>
+          <ul class="achievement-list">
+            <li data-i18n="akka_1">Mantuve y evolucioné sistemas operativos embebidos para el control de máquinas de generación eólica, desarrollados en C y shell script.</li>
+            <li data-i18n="akka_2">Diagnostiqué y resolví incidencias críticas en sistemas de control de aerogeneradores en producción.</li>
           </ul>
         </article>
-
-        <article class="job">
-          <header>
-            <h3>INECO</h3>
-            <p data-i18n="job_ineco">Analista programador | Enero 2021 - Julio 2021 (7 meses)</p>
-          </header>
-          <ul>
-            <li data-i18n="job_ineco_b1">Migré el sistema de compras y control de AENA desde una base de código legacy y obsoleta a tecnologías modernas de .NET.</li>
-            <li data-i18n="job_ineco_b2">Desarrollé nuevas funcionalidades con .NET y Angular como parte de la modernización del sistema.</li>
-          </ul>
+        <article class="experience">
+          <div class="experience-heading"><div><h3>INECO</h3><p class="role" data-i18n="ineco_role">Analista / desarrollador de software</p></div><p class="date" data-i18n="ineco_date">Ene 2021 – Jul 2021</p></div>
+          <ul class="achievement-list"><li data-i18n="ineco_1">Migré el sistema de compras y control de AENA desde una base de código obsoleta a tecnologías modernas de .NET y desarrollé nuevas funcionalidades con .NET y Angular.</li></ul>
         </article>
-
-        <article class="job">
-          <header>
-            <h3>APARA</h3>
-            <p data-i18n="job_apara">Ingeniero de software | Febrero 2020 - Noviembre 2020 (10 meses)</p>
-          </header>
+        <article class="experience">
+          <div class="experience-heading"><div><h3>Environmental Solutions de Venezuela (ESVENCA)</h3><p class="role" data-i18n="esvenca_roles">Coordinador de Sistemas de Información (ago 2014 – abr 2016) · Analista de sistemas (oct 2012 – jul 2014)</p></div></div>
+          <ul class="achievement-list"><li data-i18n="esvenca_1">Lideré un equipo de desarrollo de hasta 15 personas que entregó sistemas internos de inventario, control de procesos y seguimiento de actividades en campo.</li></ul>
         </article>
-
-        <article class="job">
-          <header>
-            <h3>Minsait</h3>
-            <p data-i18n="job_minsait">Senior Software Engineer | Marzo 2019 - Febrero 2020 | Madrid, España (1 año)</p>
-          </header>
-        </article>
-
-        <article class="job">
-          <header>
-            <h3>TEAMNET S.L.</h3>
-            <p data-i18n="job_teamnet">Full-stack Developer | Junio 2018 - Febrero 2019 | Madrid, España (9 meses)</p>
-          </header>
-        </article>
-
-        <article class="job">
-          <header>
-            <h3>SOAINT</h3>
-            <p data-i18n="job_soaint">Consultor técnico | Abril 2016 - Noviembre 2017 | España (1 año 8 meses)</p>
-          </header>
-        </article>
-
-        <article class="job">
-          <header>
-            <h3>ENVIRONMENTAL SOLUTIONS DE VENEZUELA, C.A. (ESVENCA)</h3>
-          </header>
-          <ul>
-            <li data-i18n="job_esvenca_coord">Coordinador de Sistemas de Información | Agosto 2014 - Abril 2016 (1 año 9 meses)</li>
-            <li data-i18n="job_esvenca_anal">Analista de sistemas | Octubre 2012 - Julio 2014 (1 año 10 meses)</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <header>
-            <h3>Adamantio, C.A.</h3>
-            <p data-i18n="job_adamantio">Analista, Desarrollador y Consultor | Abril 2011 - Septiembre 2012 (1 año 6 meses)</p>
-          </header>
-        </article>
-
-        <article class="job">
-          <header>
-            <h3>Styc, C.A.</h3>
-            <p data-i18n="job_styc">Programador | Junio 2009 - Junio 2010 (1 año 1 mes)</p>
-          </header>
-        </article>
-      </section>
-
-      <section class="block grid">
-        <div>
-          <h2 data-i18n="cmd_education"><span>$</span> educacion</h2>
-          <ul class="plain">
-            <li data-i18n="edu_1">Universidad Europea - Máster en Big Data, Informática (2016 - 2017)</li>
-            <li data-i18n="edu_2">Universidad de Oriente VE - Ingeniería en Sistemas (2003 - 2009)</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 data-i18n="cmd_languages"><span>$</span> idiomas</h2>
-          <ul class="plain">
-            <li data-i18n="lang_en">Inglés: Nivel profesional</li>
-            <li data-i18n="lang_es">Español: Nativo o Bilingüe</li>
+        <div class="earlier-experience">
+          <h3 data-i18n="earlier_title">Experiencia anterior</h3>
+          <ul class="earlier-list">
+            <li><span data-i18n="earlier_apara"><strong>APARA</strong> · Ingeniero de software</span><time data-i18n="earlier_apara_date">Feb – Nov 2020</time></li>
+            <li><span data-i18n="earlier_minsait"><strong>Minsait</strong> · Senior Software Engineer · Mentoría de perfiles junior</span><time data-i18n="earlier_minsait_date">Mar 2019 – Feb 2020</time></li>
+            <li><span data-i18n="earlier_teamnet"><strong>TEAMNET S.L.</strong> · Full-stack Developer</span><time data-i18n="earlier_teamnet_date">Jun 2018 – Feb 2019</time></li>
+            <li><span data-i18n="earlier_soaint"><strong>SOAINT</strong> · Consultor técnico · Mentoría de nuevos desarrolladores</span><time data-i18n="earlier_soaint_date">Abr 2016 – Nov 2017</time></li>
+            <li><span data-i18n="earlier_adamantio"><strong>Adamantio, C.A.</strong> · Analista, desarrollador y consultor</span><time data-i18n="earlier_adamantio_date">Abr 2011 – Sep 2012</time></li>
+            <li><span data-i18n="earlier_styc"><strong>Styc, C.A.</strong> · Programador</span><time data-i18n="earlier_styc_date">Jun 2009 – Jun 2010</time></li>
           </ul>
         </div>
       </section>
-
-      <section class="block">
-        <h2 data-i18n="cmd_skills"><span>$</span> habilidades_tecnicas</h2>
-        <div class="skills">
-          <p data-i18n="skills_highlight"><strong>Tecnologías destacadas:</strong> .NET/C#, AWS, Terraform, CI/CD, C++ y Git/GitHub.</p>
-
-          <h3 data-i18n="skills_group_devops">Cloud &amp; DevOps</h3>
-          <p data-i18n="skills_aws"><strong>AWS:</strong> Diseño de arquitecturas cloud seguras multi-cuenta, migración de sistemas on-premise a servicios gestionados e integraciones cloud.</p>
-          <p data-i18n="skills_terraform"><strong>Terraform:</strong> IaC para automatización, provisión y gestión eficiente de recursos cloud y on-premise con módulos reutilizables.</p>
-          <p data-i18n="skills_cicd"><strong>CI/CD:</strong> Pipelines de integración y despliegue continuo con GitHub Actions para entregas rápidas y confiables.</p>
-          <p data-i18n="skills_git"><strong>Git y GitHub:</strong> Gestión avanzada de ramas, fusiones, issues y pull requests para calidad y trazabilidad del código.</p>
-          <p data-i18n="skills_bash"><strong>Bash:</strong> Automatización de tareas en Linux, despliegues, monitorización, backup y mantenimiento de infraestructuras.</p>
-
-          <h3 data-i18n="skills_group_dev">Desarrollo de Software</h3>
-          <p data-i18n="skills_csharp"><strong>.NET/C#:</strong> Más de 10 años diseñando, desarrollando, manteniendo y optimizando sistemas empresariales y arquitecturas orientadas a eventos con esta tecnología.</p>
-          <p data-i18n="skills_cpp"><strong>C++:</strong> Desarrollo de aplicaciones de alto rendimiento, sistemas críticos, algoritmos complejos y componentes embebidos.</p>
-          <p data-i18n="skills_js"><strong>JavaScript:</strong> Desarrollo frontend, integración de APIs y optimización de experiencia de usuario.</p>
-          <p data-i18n="skills_other"><strong>Otros:</strong> C, Java, SQL, Python, YAML, administración y desarrollo sobre Windows y Linux.</p>
-
-          <h3 data-i18n="skills_group_ai">IA en el flujo de trabajo</h3>
-          <p data-i18n="skills_ai"><strong>IA en desarrollo:</strong> Uso de Cursor, Claude y ChatGPT como herramientas de desarrollo asistido por IA, integradas en el flujo de trabajo para generación y revisión de código, refactoring, documentación y resolución de problemas complejos.</p>
+      <section class="resume-section" aria-labelledby="skills-title">
+        <h2 id="skills-title" data-i18n="skills_title">Competencias clave</h2>
+        <div class="skill-rows">
+          <p data-i18n="skills_leadership"><strong>Liderazgo y arquitectura:</strong> Liderazgo de equipos de hasta 15 personas y mentoría · Selección tecnológica según rendimiento · Migraciones a AWS · Arquitecturas seguras multicuentas · Estándares reutilizables con Terraform.</p>
+          <p data-i18n="skills_cloud"><strong>Cloud y DevOps:</strong> AWS (incluido Lambda) · Terraform (IaC y módulos reutilizables) · CI/CD con GitHub Actions (YAML) · Git/GitHub · Bash · Linux y Windows.</p>
+          <p data-i18n="skills_backend"><strong>Desarrollo backend:</strong> .NET/C# (más de 10 años; sistemas empresariales y arquitecturas orientadas a eventos) · JavaScript · Python · C++ · C · Java · SQL.</p>
+          <p data-i18n="skills_ai"><strong>Desarrollo asistido por IA:</strong> Ollama, OpenCode, Claude y ChatGPT para generación y revisión de código, refactorización y documentación.</p>
         </div>
       </section>
-
-      <footer class="footer">
-        <p class="prompt" data-i18n="footer_prompt">$ echo "Disponible para liderazgo técnico y consultoría de software"</p>
-        <p>&copy; <span id="year"></span> Ernesto Jimenez</p>
-      </footer>
-    </section>
-  </main>
-  <div class="floating-btns">
-    <button id="lang-btn" class="floating-lang-btn" type="button">EN</button>
-    <button id="export-pdf-btn" class="floating-pdf-btn" type="button" data-i18n="export_pdf">Exportar PDF</button>
+      <section class="resume-section education-section" aria-labelledby="education-title">
+        <h2 id="education-title" data-i18n="education_title">Formación e idiomas</h2>
+        <div class="education-row"><p data-i18n="education_master"><strong>Universidad Europea</strong> · Máster en Big Data (Informática)</p><time>2016 – 2017</time></div>
+        <div class="education-row"><p data-i18n="education_degree"><strong>Universidad de Oriente, Venezuela</strong> · Ingeniería en Sistemas</p><time>2003 – 2009</time></div>
+        <p class="languages" data-i18n="languages"><strong>Inglés:</strong> Nivel profesional · <strong>Español:</strong> Nativo</p>
+      </section>
+    </main>
   </div>
   <script src="script.js"></script>
 </body>
